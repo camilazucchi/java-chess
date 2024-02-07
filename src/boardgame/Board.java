@@ -1,5 +1,6 @@
 package boardgame;
 
+// A class Board refere-se ao tabuleiro do jogo.
 public class Board {
 
     private int rows;
@@ -29,5 +30,17 @@ public class Board {
     public void setColumns(int columns) {
         this.columns = columns;
     }
+
+    // Esse método retorna a matriz Pieces na linha e na coluna especificada:
+    public Piece piece(int row, int column) {
+        return pieces[row][column];
+    }
+
+    // Esse método retorna a peça (piece) pela posição (position):
+    public Piece piece(Position position) {
+        return pieces[position.getRow()][position.getColumn()];
+    }
+
+
 
 }
