@@ -1,5 +1,6 @@
 package boardgame;
 
+// A class Piece refere-se à peça do tabuleiro do jogo.
 public class Piece {
 
     protected Position position;
